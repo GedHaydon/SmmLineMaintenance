@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_eol_maintenance_domain_SMMLine" modelAttribute="SMMLine_" path="/smmlines" versionField="Version" z="V6pbM6VcVuat/pNDpuImvqOL3/c=">
+        <field:select field="smmGroup" id="c_com_eol_maintenance_domain_SMMLine_smmGroup" itemValue="id" items="${smmgroups}" path="/smmgroups" required="true" z="9swCzY6HDye2Zl8bsX76rL8zdFQ="/>
+        <field:textarea field="name" id="c_com_eol_maintenance_domain_SMMLine_name" required="true" z="maDD7cCtjCaMtitNCOm/c8TAqLs="/>
+        <field:textarea field="description" id="c_com_eol_maintenance_domain_SMMLine_description" z="yGM01yskHDiylpiOKsyJozyuINI="/>
+        <field:input field="product" id="c_com_eol_maintenance_domain_SMMLine_product" validationMessageCode="field_invalid_integer" z="Y9nX0bQHGBL4j2Xrs4EAc/x4ToM="/>
+        <field:select field="buildStage" id="c_com_eol_maintenance_domain_SMMLine_buildStage" items="${buildstages}" path="buildstages" z="15GhscFW+hV77L/OrMarW4EUHHY="/>
+        <field:textarea field="buildStageText" id="c_com_eol_maintenance_domain_SMMLine_buildStageText" z="xQDKVH3xFoxWYUs120nMQgrftg4="/>
+        <field:input field="unitTime" id="c_com_eol_maintenance_domain_SMMLine_unitTime" validationMessageCode="field_invalid_number" z="LsHUhW0qL5+7h29V//2NlfH+ttk="/>
+        <field:checkbox field="schedule" id="c_com_eol_maintenance_domain_SMMLine_schedule" z="Vk16ZB05Z1FdkPabDE5x85O0Xn4="/>
+        <field:textarea field="formula" id="c_com_eol_maintenance_domain_SMMLine_formula" z="7HE8f8dcUEykZ0zfILA2/bkApTk="/>
+        <field:select field="labourGrade" id="c_com_eol_maintenance_domain_SMMLine_labourGrade" items="${labourgrades}" path="labourgrades" z="pI/TgkIvFqQ8YyoSU+EQq82+olo="/>
+        <field:select field="labourUOM" id="c_com_eol_maintenance_domain_SMMLine_labourUOM" items="${uoms}" path="uoms" z="qDMB4Lhc4/1vELbDY0JCkLpLrUs="/>
+        <field:input field="labourRateCost" id="c_com_eol_maintenance_domain_SMMLine_labourRateCost" validationMessageCode="field_invalid_integer" z="l453n9DMxgQyxWdVasy+Jdz6g0I="/>
+        <field:input field="labourQuantity" id="c_com_eol_maintenance_domain_SMMLine_labourQuantity" validationMessageCode="field_invalid_integer" z="Or77mZ3Fg77zbfXhrMC8gKCgHGQ="/>
+        <field:input field="labourRate" id="c_com_eol_maintenance_domain_SMMLine_labourRate" validationMessageCode="field_invalid_integer" z="CfkI95DfilePLXZsX7IokD5mPEk="/>
+        <field:input field="labourRoundTo" id="c_com_eol_maintenance_domain_SMMLine_labourRoundTo" required="true" validationMessageCode="field_invalid_number" z="5vrsqnIoq+NhzoOtqtjWCeJX6Rs="/>
+        <field:input field="labourTotal" id="c_com_eol_maintenance_domain_SMMLine_labourTotal" validationMessageCode="field_invalid_number" z="6EuSnp4clporXB5+L2PWA0lNAlA="/>
+        <field:input field="materialRate" id="c_com_eol_maintenance_domain_SMMLine_materialRate" validationMessageCode="field_invalid_number" z="ON4oq5Zuw4SUoQnHEer4TwMEio8="/>
+        <field:input field="materialQuantity" id="c_com_eol_maintenance_domain_SMMLine_materialQuantity" validationMessageCode="field_invalid_integer" z="/js2uh4PIJN7BbxV7Pw1VyVt654="/>
+        <field:input field="materialMultiplier" id="c_com_eol_maintenance_domain_SMMLine_materialMultiplier" validationMessageCode="field_invalid_number" z="QE8mPwtWy3MEItFJQPoyTjccaEY="/>
+        <field:input field="materialRoundTo" id="c_com_eol_maintenance_domain_SMMLine_materialRoundTo" required="true" validationMessageCode="field_invalid_number" z="QdfEYGKNu+zSM/YwotwT4Hr78r0="/>
+        <field:input field="materialTotal" id="c_com_eol_maintenance_domain_SMMLine_materialTotal" validationMessageCode="field_invalid_number" z="ZlaqruG0UJghuuIkMas9lduKHLU="/>
+        <field:input field="idx" id="c_com_eol_maintenance_domain_SMMLine_idx" render="false" validationMessageCode="field_invalid_integer" z="user-managed"/>
+        <field:input field="uuid" id="c_com_eol_maintenance_domain_SMMLine_uuid" readonly="true" required="true" validationMessageCode="field_invalid_integer" z="user-managed"/>
+        <field:select field="smmCalculation" id="c_com_eol_maintenance_domain_SMMLine_smmCalculation" items="${smmcalculations}" path="smmcalculations" z="5yc/j9vk5qQACLX9L2LiVGJK1Ks="/>
+    </form:update>
+</div>

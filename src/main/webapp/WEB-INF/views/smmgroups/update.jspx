@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_eol_maintenance_domain_SMMGroup" modelAttribute="SMMGroup_" path="/smmgroups" versionField="Version" z="BD5P/TZG86rHd14vNBe1xN0cdfY=">
+        <field:input field="idx" id="c_com_eol_maintenance_domain_SMMGroup_idx" render="false" validationMessageCode="field_invalid_integer" z="user-managed"/>
+        <field:textarea field="name" id="c_com_eol_maintenance_domain_SMMGroup_name" required="true" z="Nqg1ZPJVcfY8PZXjfERWhLkALOQ="/>
+        <field:select field="softwareVersion" id="c_com_eol_maintenance_domain_SMMGroup_softwareVersion" itemValue="id" items="${softwareversions}" path="/softwareversions" required="true" z="s88zVU7P4bHeLiIKLSvxEI9BaBc="/>
+        <field:input field="uuid" id="c_com_eol_maintenance_domain_SMMGroup_uuid" readonly="true" required="true" validationMessageCode="field_invalid_integer" z="user-managed"/>
+        <field:input field="includeAsLumpSum" id="c_com_eol_maintenance_domain_SMMGroup_includeAsLumpSum" z="s2DTJMd+OtONnusycViSrCHI63E="/>
+        <field:input field="overhead" id="c_com_eol_maintenance_domain_SMMGroup_overhead" validationMessageCode="field_invalid_number" z="W0bg/Yi6ckPZkgFcec1hxsGngXE="/>
+        <field:input field="profit" id="c_com_eol_maintenance_domain_SMMGroup_profit" validationMessageCode="field_invalid_number" z="cynlrZfpMEjsq7/V5POFL+q+i7M="/>
+        <field:input field="labourTotal" id="c_com_eol_maintenance_domain_SMMGroup_labourTotal" validationMessageCode="field_invalid_number" z="q3JsQ8F85nJhyCTWY7kxTUBG+f4="/>
+        <field:input field="materialTotal" id="c_com_eol_maintenance_domain_SMMGroup_materialTotal" validationMessageCode="field_invalid_number" z="ZDn7xaO5gHPC7ihs8GndVW6JPNs="/>
+        <field:input field="pcSum" id="c_com_eol_maintenance_domain_SMMGroup_pcSum" z="zxpDW5akkLQbzWZKOxEpJxSJZ10="/>
+    </form:update>
+</div>

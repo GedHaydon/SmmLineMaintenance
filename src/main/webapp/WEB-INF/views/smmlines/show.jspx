@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_eol_maintenance_domain_SMMLine" object="${smmline_}" path="/smmlines" z="rqhI8iEFbm5z+s/ZFTBSD/Y2XJE=">
+        <field:display field="unitTime" id="s_com_eol_maintenance_domain_SMMLine_unitTime" object="${smmline_}" z="kXJfBKwYQVFs9mflHgKL0Jee1+s="/>
+        <field:display field="labourRate" id="s_com_eol_maintenance_domain_SMMLine_labourRate" object="${smmline_}" z="UPzVhCUCbOLIB2/ggrf5Sz9kwPA="/>
+        <field:display field="product" id="s_com_eol_maintenance_domain_SMMLine_product" object="${smmline_}" z="YUJFBIw2jkZQS7MWqrVVM1OkSoE="/>
+        <field:display field="smmGroup" id="s_com_eol_maintenance_domain_SMMLine_smmGroup" object="${smmline_}" z="h97EVV7UWlYLziQ30aA6BOccChI="/>
+        <field:display field="labourQuantity" id="s_com_eol_maintenance_domain_SMMLine_labourQuantity" object="${smmline_}" z="O8JmZnl/H1aw2XEgy1Y041YjmQU="/>
+        <field:display field="labourRateCost" id="s_com_eol_maintenance_domain_SMMLine_labourRateCost" object="${smmline_}" z="GR4XduOEgp+ePyfCePlE5gvNEBc="/>
+        <field:display field="materialQuantity" id="s_com_eol_maintenance_domain_SMMLine_materialQuantity" object="${smmline_}" z="182M+39ckaUjkE54Gh/Jka4wVGA="/>
+        <field:display field="uuid" id="s_com_eol_maintenance_domain_SMMLine_uuid" object="${smmline_}" z="GWpuhuL7uAhcrZJSSiPPr2/SGUU="/>
+        <field:display field="buildStage" id="s_com_eol_maintenance_domain_SMMLine_buildStage" object="${smmline_}" z="Pt5Imj9c0tjLWFR3tD9kSP1/kcI="/>
+        <field:display field="schedule" id="s_com_eol_maintenance_domain_SMMLine_schedule" object="${smmline_}" z="PPHHWbvDBIyH5K5xbrnZbGlcap8="/>
+        <field:display field="labourTotal" id="s_com_eol_maintenance_domain_SMMLine_labourTotal" object="${smmline_}" z="nsScCRF5zLgQfJCoIgf5ffnSRUA="/>
+        <field:display field="materialTotal" id="s_com_eol_maintenance_domain_SMMLine_materialTotal" object="${smmline_}" z="OqhVQj/673s1yXBoC2uQGrI3SjQ="/>
+        <field:display field="buildStageText" id="s_com_eol_maintenance_domain_SMMLine_buildStageText" object="${smmline_}" z="ECWSoiEdFs4OaUzswdW75DDO9K4="/>
+        <field:display field="formula" id="s_com_eol_maintenance_domain_SMMLine_formula" object="${smmline_}" z="UxwfVLbXH2X2y3I34VqcmgEx48w="/>
+        <field:display field="description" id="s_com_eol_maintenance_domain_SMMLine_description" object="${smmline_}" z="MFiatf1i0Trauzr1WszE9s/KwKg="/>
+        <field:display field="name" id="s_com_eol_maintenance_domain_SMMLine_name" object="${smmline_}" z="wEKmXCM2geEhTVuldyfxI+PAkIA="/>
+        <field:display field="idx" id="s_com_eol_maintenance_domain_SMMLine_idx" object="${smmline_}" z="riF3FwZzrrh4KRL2G6hSM9uK0lo="/>
+        <field:display field="labourRoundTo" id="s_com_eol_maintenance_domain_SMMLine_labourRoundTo" object="${smmline_}" z="GzhTOHNCh0xkyilFnJs+QpGavCE="/>
+        <field:display field="labourUOM" id="s_com_eol_maintenance_domain_SMMLine_labourUOM" object="${smmline_}" z="6dt/MSbPK0jb/ltrpSgXOnwCY5o="/>
+        <field:display field="materialMultiplier" id="s_com_eol_maintenance_domain_SMMLine_materialMultiplier" object="${smmline_}" z="37frl/cAWNuEi5lp3KIQ3X2fuMU="/>
+        <field:display field="materialRate" id="s_com_eol_maintenance_domain_SMMLine_materialRate" object="${smmline_}" z="6VQ2UQCT/bCtX1/WKsU0QTwRjJ8="/>
+        <field:display field="materialRoundTo" id="s_com_eol_maintenance_domain_SMMLine_materialRoundTo" object="${smmline_}" z="wUo1KsWttcdgNGnqtqIg7KqKyBE="/>
+        <field:display field="smmCalculation" id="s_com_eol_maintenance_domain_SMMLine_smmCalculation" object="${smmline_}" z="0zD+bG702QxLN52TvJTxIeWqLfw="/>
+        <field:display field="labourGrade" id="s_com_eol_maintenance_domain_SMMLine_labourGrade" object="${smmline_}" z="l0R/WfVlpSSGI3YpggsUPUoRhAU="/>
+    </page:show>
+</div>

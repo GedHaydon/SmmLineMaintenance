@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_eol_maintenance_domain_BuildLayer" items="${buildlayers}" z="DTclPZXCTAcKFEX2rHmUACYY13o=">
+        <table:table data="${buildlayers}" id="l_com_eol_maintenance_domain_BuildLayer" path="/buildlayers" z="MguR/UeZSgQoBcMDyohOhHwrii4=">
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_name" property="name" z="8ZVZzDmHgtSecpeSKt2JhXdn4hQ="/>
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_description" property="description" z="KyumGmo0gB6QszJ80x4qujM5NHM="/>
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_idx" property="idx" z="G0jLallxtFiN0fj1MLNDJUfv89s="/>
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_live" property="live" z="R2/i9cujOb+JZysc4R3pUsPb5HU="/>
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_required" property="required" z="a+KqXNqImfbTOQr8LkZuyoiAhII="/>
+            <table:column id="c_com_eol_maintenance_domain_BuildLayer_uuid" property="uuid" z="+hRmYgrCDquMuK1eMpy06MQztsw="/>
+        </table:table>
+    </page:list>
+</div>

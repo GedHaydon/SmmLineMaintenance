@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_eol_maintenance_domain_SMMLine" items="${smmlines}" z="k0M6QaQH32g5U1bvIPCo4BES4iw=">
+        <table:table data="${smmlines}" id="l_com_eol_maintenance_domain_SMMLine" path="/smmlines" z="o7FBBKIsc4fHuI8qyKIxB7XJcSg=">
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_name" property="name" z=""/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_description" property="description" z=""/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_smmGroup" property="smmGroup" z="3rmiXB93eNi45aC2m5AB2NRkenc="/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_product" property="product" z="Ul/dWQoFroudhJQvYyQcgNekBzA="/>
+        	<table:column id="c_com_eol_maintenance_domain_SMMLine_schedule" property="schedule" z=""/>
+        	<table:column id="c_com_eol_maintenance_domain_SMMLine_buildStage" property="buildStage" z=""/>    
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_unitTime" property="unitTime" z="RCVFOvPAJivqDQCGgXI2gCaZHyE="/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_labourRate" property="labourRate" z="6+miS6mdGBOyxutyhi8XvcujJ10="/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_labourQuantity" property="labourQuantity" z="nSYanlzvzJSJJQwtH6Sx/uKd7LM="/>
+            <table:column id="c_com_eol_maintenance_domain_SMMLine_uuid" property="uuid" z="Diof7+d0MSX+5Sh2WbhKt90wlYI="/>
+        </table:table>
+    </page:list>
+</div>

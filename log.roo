@@ -1,0 +1,153 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-15 12:45:14
+project --topLevelPackage com.eol --projectName SMMLineMaintenance --java 7 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-15 12:45:24
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-15 12:45:27
+jpa setup --provider HIBERNATE --database MYSQL --databaseName SMMDB --userName root --password marbles
+entity jpa --class ~.domain.SMMGroup
+entity jpa --class ~.domain.SMMGroup --testAutomatically 
+field number --fieldName idx --type java.lang.Long
+field string --fieldName name --sizeMax 255 --notNull 
+field number --fieldName version --type int
+field number --fieldName software_version --type java.lang.Long
+// [failed] field number --fieldName software_version --type java.lang.Long --notNull 
+field number --fieldName uuid --type java.lang.Long --notNull 
+field number --fieldName applied_after_contingencies --type byte
+field number --fieldName include_as_lump_sum --type byte
+field number --fieldName overhead --type double
+field number --fieldName profit --type double
+field number --fieldName labour_total --type double
+field number --fieldName material_total --type double
+field number --fieldName pc_sum --type byte
+entity jpa --class ~.domain.SMMLine
+field string --fieldName description --sizeMax  255
+field number --fieldName idx --type java.lang.Long
+field number --fieldName labour_round_to --type double
+field number --fieldName labouruom --type int
+field number --fieldName material_multiplier --type double
+field number --fieldName material_rate --type double
+field number --fieldName material_round_to --type double
+field string --fieldName name --sizeMax 255 --notNull 
+field number --fieldName unit_time --type double
+field number --fieldName version --type int
+field number --fieldName labour_rate --type java.lang.Long --notNull 
+// [failed] field number --fieldName labour_rate --type java.lang.Long
+field number --fieldName product --type java.lang.Long
+field number --fieldName smm_group --type java.lang.Long --notNull 
+field number --fieldName labour_quantity --type java.lang.Long
+field number --fieldName labour_rate_cost --type java.lang.Long
+field number --fieldName material_quantity --type java.lang.Long
+field number --fieldName uuid --type java.lang.Long --notNull 
+field number --fieldName buid_stage --type int
+field number --fieldName schedule --type byte
+field string --fieldName smm_calculation --sizeMax 255
+field number --fieldName labour_total --type double
+field number --fieldName material_total --type double
+field string --fieldName labour_grade --sizeMax 10
+field string --fieldName build_stage_text --sizeMax 255
+field string --fieldName formula --lob 
+entity jpa --class ~.domain.SMMLine --testAutomatically 
+focus --class ~.domain.SMMGroup
+focus --class ~.domain.SMMLine
+field number --fieldName unit_time --type double
+field number --fieldName version --type int
+field number --fieldName labour_rate --type java.lang.Long --notNull 
+// [failed] field number --fieldName labour_rate --type java.lang.Long
+field number --fieldName product --type java.lang.Long
+field number --fieldName smm_group --type java.lang.Long --notNull 
+field number --fieldName labour_quantity --type java.lang.Long
+field number --fieldName labour_rate_cost --type java.lang.Long
+field number --fieldName material_quantity --type java.lang.Long
+field number --fieldName uuid --type java.lang.Long --notNull 
+field number --fieldName buid_stage --type int
+field number --fieldName schedule --type byte
+field string --fieldName smm_calculation --sizeMax 255
+field number --fieldName labour_total --type double
+field number --fieldName material_total --type double
+field string --fieldName labour_grade --sizeMax 10
+field string --fieldName build_stage_text --sizeMax 255
+field string --fieldName formula --lob 
+field string --fieldName description --sizeMax 255
+field string --fieldName name --sizeMax 255 --notNull 
+field number --fieldName idx --type java.lang.Long
+field number --fieldName labour_round_to --type double
+field number --fieldName labouruom --type int
+field number --fieldName material_multiplier --type double
+field number --fieldName material_rate --type double
+field number --fieldName material_roundf_to --type double
+focus --class ~.domain.SMMLine
+field enum --type string --fieldName labourGrade
+entity jpa --class ~.domain.SoftwareVersion --testAutomatically 
+field string --fieldName dtype --sizeMax 31
+enum type --class ~.domain.LabourGrade
+enum type --class ~.domain.SMMCalculation 
+focus --class ~.domain.SoftwareVersion
+field date --fieldName tstamp --type java.util.Date
+web mvc setup 
+web mvc all --package ~.web
+web mvc all --package ~.web
+logging setup --level TRACE --package PROJECT 
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-17 11:30:36
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-17 11:57:16
+entity jpa --class ~.domain.BuildLayer --testAutomatically 
+enum type --class ~.domain.LabourGrade
+enum type --class ~.domain.UOM
+enum type --class ~.domain.BuildStage
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-17 12:17:57
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-18 11:00:19
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-18 11:25:20
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-18 11:43:03
+logging setup --level DEBUG --package PERSISTENCE
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-18 13:39:59
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-18 13:41:37
+logging setup --level DEBUG --package ALL_SPRING 
+logging setup --level TRACE 
+logging setup --level DEBUG --package TRANSACTIONS 
+logging setup --level DEBUG --package PERSISTENCE 
+logging setup --level TRACE --package PERSISTENCE 
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-18 17:58:40
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-19 09:44:26
+logging setup --level INFO --package PROJECT 
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-19 13:06:01
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-19 13:08:04
+// [failed] focus --class ~.maintenance.domain.SMMGroupfinder
+// [failed] finder list 
+finder list --class ~.maintenance.domain.SMMGroup
+finder add findSMMGroupsByNameLike
+finder list
+finder add --finderName findSMMGroupsByNameLike --class ~domain.SMMGroup
+finder add --finderName findSMMGroupsByNameLike --class ~.domain.SMMGroup
+finder add --finderName findSMMGroupsByNameLike --class ~.maintenance.domain.SMMGroup
+finder add --finderName findSMMGroupsByNameLike --class ~.maintenance.domain.SMMGroup
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-19 13:34:50
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-19 13:35:05
+finder list --class ~.maintenance.domain.SMMGroup
+finder add --finderName findSMMGroupsByNameLike
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-19 13:37:12
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-19 13:38:53
+finder list --class ~.maintenance.domain.SMMGroup
+finder add --finderName findSMMGroupsByNameLike --class ~.maintenance.domain.SMMGroup
+web mvc all --package ~.web
+web mvc all --package ~.web
+web mvc all --package com.eol.maintenance.web
+web mvc all --package com.eol.maintenance.web
+finder list --class ~.maintenance.domain.SMMGroup 
+// [failed] web mvc finder add --formBackingType ~.maintenance.domain.SMMGroup
+// [failed] web mvc finder all
+finder list 
+finder add --finderName findSMMGroupsByNameLike --class ~.maintenance.domain.SMMGroup
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-19 15:16:07
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-19 15:18:52
+web mvc all --package com.eol.maintenance.web
+web mvc finder all
+finder list --class ~.maintenance.domain.SMMGroup
+finder list --class ~.maintenance.domain.SMMGroup
+finder list --class ~.maintenance.domain.SMMGroup --depth 2
+finder list --class ~.maintenance.domain.SMMLine
+finder add --finderName findSMMLinesByNameLike --class ~.maintenance.domain.SMMLineDataOnDemand
+finder add --finderName findSMMLinesByNameLike --class ~.maintenance.domain.SMMLine
+web mvc finder all
+logging setup --level DEBUG --package PERSISTENCE 
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-20 09:43:02
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-20 12:34:37
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-21 09:05:52
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-21 09:17:10

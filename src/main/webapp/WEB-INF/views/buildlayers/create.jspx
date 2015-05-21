@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_eol_maintenance_domain_BuildLayer" modelAttribute="buildLayer" path="/buildlayers" render="${empty dependencies}" z="iINDR0xL+xy3aDg4o3hp87gLXLY=">
+        <field:input field="name" id="c_com_eol_maintenance_domain_BuildLayer_name" required="true" z="ekxlLfj+nqTlgPtgoR8jirl/fzY="/>
+        <field:input field="description" id="c_com_eol_maintenance_domain_BuildLayer_description" z="O7W17Atp3QccH07ISGOgSYFhGis="/>
+        <field:input field="idx" id="c_com_eol_maintenance_domain_BuildLayer_idx" validationMessageCode="field_invalid_integer" z="nDRKSFydzd7zW+68WlmsVhbyc5I="/>
+        <field:checkbox field="live" id="c_com_eol_maintenance_domain_BuildLayer_live" z="YMMr33spz+tWssdZ4DIP9yg8Fgo="/>
+        <field:checkbox field="required" id="c_com_eol_maintenance_domain_BuildLayer_required" z="mqeOQO9ywApk0kirGIK9cBT4WjM="/>
+        <field:select field="softwareVersion" id="c_com_eol_maintenance_domain_BuildLayer_softwareVersion" itemValue="id" items="${softwareversions}" path="/softwareversions" required="true" z="JUDfr+KDTOBPq41AEX8sdew1oKc="/>
+        <field:textarea field="helpFile" id="c_com_eol_maintenance_domain_BuildLayer_helpFile" z="jbe+gi2d4ffudx7gpXV1lT2flJU="/>
+        <field:input field="uuid" id="c_com_eol_maintenance_domain_BuildLayer_uuid" required="true" validationMessageCode="field_invalid_integer" z="vlvs7GkUVFSbHr/sY93vvYkca7k="/>
+        <field:input field="toolTipText" id="c_com_eol_maintenance_domain_BuildLayer_toolTipText" z="Enxp5pBdrWxvOIbb/XFCSU1BwBY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_eol_maintenance_domain_BuildLayer" render="${not empty dependencies}" z="88H2gfUI5L42nmuG/TFIoirt8dM="/>
+</div>

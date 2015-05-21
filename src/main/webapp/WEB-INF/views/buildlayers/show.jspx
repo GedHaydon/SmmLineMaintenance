@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_eol_maintenance_domain_BuildLayer" object="${buildlayer}" path="/buildlayers" z="llWlqLPzgUox2DZEWYd7uFKdgSg=">
+        <field:display field="name" id="s_com_eol_maintenance_domain_BuildLayer_name" object="${buildlayer}" z="cnC9q9pYX7SrZ3RFPxK3I3UFGcI="/>
+        <field:display field="description" id="s_com_eol_maintenance_domain_BuildLayer_description" object="${buildlayer}" z="USYG/4BMjTUAOvyLhZ20mqElUgQ="/>
+        <field:display field="idx" id="s_com_eol_maintenance_domain_BuildLayer_idx" object="${buildlayer}" z="ENcrtZgq75fL8nc4RTxejn38ccc="/>
+        <field:display field="live" id="s_com_eol_maintenance_domain_BuildLayer_live" object="${buildlayer}" z="lVLyooqpjlFASlbLCmnhZc6CkE0="/>
+        <field:display field="required" id="s_com_eol_maintenance_domain_BuildLayer_required" object="${buildlayer}" z="hpuIGVmM0oAS3yHWQL9QCxy9HpE="/>
+        <field:display field="softwareVersion" id="s_com_eol_maintenance_domain_BuildLayer_softwareVersion" object="${buildlayer}" z="yheYE+fT+ukW9irISTrVP1Sffnw="/>
+        <field:display field="helpFile" id="s_com_eol_maintenance_domain_BuildLayer_helpFile" object="${buildlayer}" z="19QOWTHcAE2OWEHkurYW6YJbd18="/>
+        <field:display field="uuid" id="s_com_eol_maintenance_domain_BuildLayer_uuid" object="${buildlayer}" z="8g30U4yGKTsx1vK7LuGG2mCDUds="/>
+        <field:display field="toolTipText" id="s_com_eol_maintenance_domain_BuildLayer_toolTipText" object="${buildlayer}" z="985Kl58F0Fc//dsxTeuIBq7p1Xk="/>
+    </page:show>
+</div>
